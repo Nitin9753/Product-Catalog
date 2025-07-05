@@ -1,0 +1,27 @@
+{
+  "name": "product-catalog-backend",
+  "version": "1.0.0",
+  "description": "RESTful API for product catalog",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "NODE_ENV=test jest",
+    "seed": "node src/utils/seedData.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.4.1",
+    "morgan": "^1.10.0",
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
